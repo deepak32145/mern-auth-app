@@ -23,6 +23,12 @@ const userSchema = new mongoose.Schema(
       type: Boolean,
       default: false,
     },
+    resetPasswordToken: String,
+    resetPasswordExpiresAt: Date,
+    verificationCode: String,
+    verificationCodeExpiresAt: Date,
   },
   { timestamps: true }
 );
+
+export const User = mongoose.model("User", userSchema);
