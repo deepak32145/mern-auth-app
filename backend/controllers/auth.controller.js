@@ -48,6 +48,7 @@ export const signup = async (req, res) => {
 };
 
 export const login = async (req, res) => {
+  console.log("login");
   const { email, password } = req.body;
   try {
     const user = await User.findOne({ email });

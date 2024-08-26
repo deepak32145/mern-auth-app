@@ -1,0 +1,6 @@
+const cookie1 =
+  "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjoiNjZjOWJhYjE5YjBhMjMwOWJmOTEyMmU5IiwiaWF0IjoxNzI0NDk2NTYxLCJleHAiOjE3MjUxMDEzNjF9._tmUJZDGpQTn7MB4mnySr5J_GnsKbI37NoBARKBcutM";
+const cookie2 =
+  "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjoiNjZjYzEwM2I3ZDNiYmM0NDA4YTRhMjUxIiwiaWF0IjoxNzI0NjQ5NTMxLCJleHAiOjE3MjUyNTQzMzF9.NES33mpT4Mt0lTh8vfRdZsWcrWVT6kMmQ4Kd_gCgnIk";
+
+console.log(cookie1 == cookie2);
