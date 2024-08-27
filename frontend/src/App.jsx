@@ -7,6 +7,8 @@ import { Toaster } from "react-hot-toast";
 import { useAuthStore } from "./store/AuthStore";
 import { useEffect } from "react";
 import Dashboard from "./pages/Dashboard";
+import ForgotPassword from "./pages/ForgotPassword";
+import ResetPasswordPage from "./pages/ResetPasswordPage";
 
 const ProtectedRoute = ({ children }) => {
   const { isAuthenticated, user } = useAuthStore();
@@ -77,6 +79,8 @@ function App() {
         />
         <Route path="/login" element={<LoginPage />} />
         <Route path="/verify-email" element={<VerifyEmailPage />} />
+        <Route path="/forgot-password" element={<ForgotPassword />} />
+        <Route path="/reset-password/:token" element={<ResetPasswordPage />} />
       </Routes>
       <Toaster />
     </div>
